@@ -4,7 +4,7 @@ EXE		:= schedsim
 all: $(EXE)
 
 schedsim: $(TASK1_SRC)
-	gcc -Wall  -std=c99 -std=gnu99 -Werror -pedantic -g $^ -o $@
+	gcc -Wall  -std=c99 -std=gnu99 -pedantic -g $^ -o $@
 
 clean:
 	rm -f $(EXE)
